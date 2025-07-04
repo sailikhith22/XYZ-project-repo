@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                git 'https://github.com/sailikhith22/XYZ-project-repo.git'
                 sh 'mvn clean compile'
             }
         }
