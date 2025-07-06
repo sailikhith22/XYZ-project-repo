@@ -34,8 +34,8 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    sh 'kubectl apply -f /home/XYZ-project-repo/manifests/deployment.yaml'
-                    sh 'kubectl apply -f /home/XYZ-project-repo/manifests/service.yaml'
+                    sh 'kubectl apply -f /home/XYZ-project-repo/k8s-manifests/deployment.yaml'
+                    sh 'kubectl apply -f /home/ubuntu/k8s-manifests/service.yaml'
                 }
             }
         }
